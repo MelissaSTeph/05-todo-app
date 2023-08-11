@@ -33,7 +33,7 @@ const loadStore = () => {
 }
 
 const saveStateToLocalStorage = () =>{
-    localStorage.setItem('state ', JSON.stringify(state) );
+    localStorage.setItem('state', JSON.stringify(state) );
 }
 
 const getTodos = ( filter = Filters.All) => {
