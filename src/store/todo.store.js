@@ -33,7 +33,7 @@ const loadStore = () => {
 }
 
 const saveStateToLocalStorage = () =>{
-    localStorage.setItem('state ', JSON.stringify(state) );
+    localStorage.setItem('state', JSON.stringify(state) );
 }
 
 const getTodos = ( filter = Filters.All) => {
@@ -49,7 +49,7 @@ const getTodos = ( filter = Filters.All) => {
                 return state.todos.filter( todo => !todo.done);
 
             default:
-                throw new Error (`Option ${ filter } is not valid.`);
+                throw new Error (`Option ${filter} is not valid.`);
     }
 }
 
